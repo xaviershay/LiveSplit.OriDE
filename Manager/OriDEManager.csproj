@@ -69,6 +69,19 @@
       <Link>OriManager.designer.cs</Link>
       <DependentUpon>OriManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="GPS\CircularBuffer.cs" />
+    <Compile Include="GPS\MapPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GPS\MapPanel.Designer.cs">
+      <DependentUpon>MapPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GPS\OriGPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GPS\OriGPS.Designer.cs">
+      <DependentUpon>OriGPS.cs</DependentUpon>
+    </Compile>
     <Compile Include="OriDisplay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -94,6 +107,9 @@
       <Link>OriManager.resx</Link>
       <DependentUpon>OriManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GPS\OriGPS.resx">
+      <DependentUpon>OriGPS.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -116,6 +132,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ori-map.jpg" />
+    <None Include="Resources\Map.jpg" />
     <EmbeddedResource Include="Images\forlornRuins.png" />
     <EmbeddedResource Include="Images\ginsoTree.png" />
     <EmbeddedResource Include="Images\hollowGrove.png" />

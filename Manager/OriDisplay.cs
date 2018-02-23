@@ -6,7 +6,8 @@ namespace LiveSplit.OriDE {
 			try {
 				Application.EnableVisualStyles();
 				Application.SetCompatibleTextRenderingDefault(false);
-				Application.Run(new OriManager());
+                Application.Run(new OriGPS());
+				//Application.Run(new OriManager());
 			} catch (Exception ex) {
 				Console.WriteLine(ex.ToString());
 			}
